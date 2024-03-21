@@ -1,0 +1,178 @@
+.colors{ 
+    background-color: red;
+    background-color: #f8f8f8;
+    background-color: rgb(0, 170, 255);
+    background-color: #1592b8; 
+    color: rgb(97, 194, 242);
+    color: rgb(255, 237, 237); 
+    color: rgb(0, 72, 117);
+}
+
+
+/* Sign In Page  */
+.signIn{
+    width: 50%;
+    height: 80vh;
+    margin: 50px auto;
+    background-color: rgba(144, 227, 252, 0.482);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+.signIn .logo img{
+    width: 200px;
+    
+}
+.signIn > label , 
+.signIn > input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(0, 72, 117);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.signIn>input{
+    border: none;
+}
+.signIn>input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 72, 117);
+}
+.signIn button{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid rgb(97, 194, 242);
+    border-radius: 4px;
+    background-color: #1592b8;
+    font-weight: bold;
+    color: #f8f8f8;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: ease-in-out 0.2s;
+}
+.signIn button:hover{
+    background-color: rgb(0, 72, 117);
+}
+.signIn .context{
+    font-weight: bold;
+}
+.signIn .context > a{
+    font-weight: bold;
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+}
+
+
+
+
+
+/* Sign Up Page  */
+.signUp {
+    width: 50%;
+    height: 80vh;
+    margin: 50px auto;
+    background-color: rgba(144, 227, 252, 0.482);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.signUp .logo img {
+    width: 150px;
+
+}
+
+.signUp>label,
+.signUp>input {
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+    color: rgb(0, 72, 117);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.signUp>input {
+    border: none;
+}
+
+.signUp>input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 72, 117);
+}
+
+.signUp button {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid rgb(97, 194, 242);
+    border-radius: 4px;
+    background-color: #1592b8;
+    font-weight: bold;
+    color: #f8f8f8;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: ease-in-out 0.2s;
+}
+
+.signUp button:hover {
+    background-color: #f5f4f4;
+}
+
+
+
+
+
+/* Dashbord Style  */
+.sidebare{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+}
+.sidebare > a > img{
+    width: 150px;
+}
+.sidebare >ul{
+    border-top: 2px solid #1592b8;
+    list-style: none;
+    width: 100%;
+    padding-top: 10px;
+}
+.sidebare > ul> li{
+    padding: 10px;
+    border: 1px solid rgb(163, 213, 241);
+    margin: 4px;
+    border-radius: 4px;
+}
+.sidebare>ul>li>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+}
+.sidebare>ul>li>a:hover{
+    color: rgb(0, 72, 117);
+}
+.sidebare>ul>li>.active{
+    color: rgb(0, 72, 117);
+}
+.sidebare .icon-list-dashbord {
+    color: #1592b8;
+}
