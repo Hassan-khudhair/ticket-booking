@@ -330,12 +330,12 @@ code {
 }
 .counts-tabel .card-counts{
   background-color:#1592b8;
-  width: 200px;
+  width: 30%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 8px;
   font-weight: bold;
   font-size: 20px;
@@ -347,17 +347,17 @@ code {
 }
 .counts-tabel .card-counts:hover{
   background-color: #1592b8b0;
-  border: 1px solid #f8f8f8;
 }
 .counts-tabel .card-counts >p:last-child{
-  transition: ease-in-out 0.3s;
-}
-.counts-tabel .card-counts:hover > p:last-child{
-  color: rgb(236, 156, 7);
+  color: rgb(239, 178, 63);
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 25px;
+  transition: ease-in-out 0.3s;
+}
+.counts-tabel .card-counts:hover > p:last-child{
+
 }
 
 .company{
@@ -400,4 +400,22 @@ code {
 .thead-table tbody tr td> .active-order{
   background-color: rgba(102, 255, 0, 0.562);
   color: rgb(1, 100, 1);
+}
+
+.navbar{
+  position: absolute;
+  top: 250px;
+  background-color: rgb(77, 104, 117);
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin: 20px auto 0;
+}
+.navbar > p{
+  display: block;
+  margin: 0 auto;
 }

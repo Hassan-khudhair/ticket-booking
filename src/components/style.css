@@ -176,3 +176,16 @@
 .sidebare .icon-list-dashbord {
     color: #1592b8;
 }
+.sidebare .icon-list-dashbord-log-out{
+    margin-left: 30px;
+}
+.sidebare .log-out-admin{
+    position: relative;
+    top: 50%;
+    color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 1px 2px 20px 1px rgba(226, 138, 138, 0.621);
+}

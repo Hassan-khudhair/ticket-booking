@@ -1,0 +1,439 @@
+:root{
+    --back-color: rgb(0, 170, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    background-color: #fefefe;
+    width: 100%;
+    margin-top: 30vh;
+    height: 100vh;
+    position: relative;
+}
+.main-content::before{
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-color: #fefefe;
+    position: absolute;
+    top: -50px;
+    border-radius:40% ;
+}
+
+.search-block{
+    position: absolute;
+    top: -80px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 1px 2px 10px 5px #b3b3b36f;
+}
+.flight-types button{
+    border: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: var(--back-color);
+}
+.flight-types .btn-active{
+    background-color: var(--back-color);
+    color: white;
+}
+.search-block .flight-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self:  space-between;
+    width: 100%;
+}
+.search-block .flight-search > form{
+    padding: 20px;
+    width: 100%;
+}
+.search-block .flight-search > form >input{
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid var(--back-color);
+    border-radius: 10px;
+    width: 30%;
+}
+.search-block .flight-search > form >input:focus{
+    outline: none;
+}
+.search-block .flight-search button{
+    border: none;
+    background-color: var(--back-color);
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* blaock flight content in main page  */
+.block-flight{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+.block-flight .head-flight-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.block-flight .head-flight-block p {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 5px 5px rgb(98, 98, 98);
+
+}
+.block-flight .head-flight-block button{
+    border:none;
+    color: var(--back-color);
+    background-color: #fefefe;
+    padding: 5px;
+    border-radius: 20px;
+}
+.block-flight .flights{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.block-flight .flights .single-flight{
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 1px 5px 10px 5px #b3b3b36f;
+    width: 30%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+.block-flight .flights .single-flight > img{
+    width: 150px;
+    height: 170px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.block-flight .single-flight .single-content{
+    padding: 0 5px;
+}
+
+.airlines{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+}
+.airlines p{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 5px 5px rgb(98, 98, 98);
+}
+.airlines .airlines-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.airlines .airlines-content .image{
+    width: 25%;
+    height: fit-content;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+
+
+/* flights page in user  */
+.tickets-main{
+    width: 80%;
+    margin: 50px auto;
+}
+.tickets-main .tickets .single-ticket {
+    margin: 10px auto;
+    width: 90%;
+    background-color: #fefefebc;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius:  8px;
+    border: 1px solid var(--back-color);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.tickets-main .tickets .single-ticket:hover{
+    background-color: #b3b3b36f;
+}
+.tickets-main .tickets .single-ticket .lines{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+    
+}
+.tickets-main .tickets .single-ticket .lines p{
+    position: relative;
+}
+.tickets-main .tickets .single-ticket .lines p .plane{
+    color: var(--back-color);
+    font-size: 25px;
+    position: relative;
+}
+.tickets-main .tickets .single-ticket .lines p::before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--back-color);
+    position: absolute;
+    top: 14px;
+    right: -70px;
+}
+.tickets-main .tickets .single-ticket .lines p::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--back-color);
+    position: absolute;
+    top: 14px;
+    left: -70px;
+}
+.tickets-main .tickets .single-ticket .lines p span{
+    color: rgb(150, 91, 3);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.tickets-main .tickets .single-ticket .price span:first-child{
+    color: var(--back-color);
+}
+.tickets-main .tickets .single-ticket .price{
+
+}
+.tickets-main .tickets .single-ticket .price{
+
+}
+
+.tickets-main .tickets .single-ticket .first-flight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.first-flight .plane-back{
+    rotate: 180deg;
+    margin-right: 10px;
+    color: var(--back-color);
+    font-size: 25px;
+    position: relative;
+}
+
+.tickets a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+
+
+
+/* reservations page for the user  */
+.reservations{
+    background-color: #dedede;
+    height: 100vh;
+    opacity: 0.8;
+    padding: 20px;
+    position: relative;
+}
+.reservations .details-ticket{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-weight: bold;
+    font-size: 25px;
+    border: 1px solid var(--back-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 15px 10px #b3b3b36f;
+}
+.reservations .details-flight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 1px 5px 10px #b3b3b36f;
+    height: 180px;
+}
+.reservations .details-flight .icon-flight{
+    color: var(--back-color);
+    margin: 0 10px ;
+}
+.reservations button a{
+    text-decoration: none;
+    color: white;
+}
+.reservations button{
+    width: 20% ;
+    display: block;
+    margin: 20px auto;
+    background-color: var(--back-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+}
+.reservations button:focus{
+    outline: none;
+    background-color: white;
+    color: var(--back-color);
+}
+.icon-back{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--back-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* seats page  */
+.seats{
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 100vh;
+    opacity: 0.8;
+    padding: 20px;
+}
+.seats .details{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.seats .details p span{
+    margin-right: 10px;
+    color: var(--back-color);
+}
+.seats .two-column ,
+.seats .three-column, 
+.seats .four-column{
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--back-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px auto;
+    gap: 20px;
+}
+.seats .two-column{
+    width: 70%;
+}
+.seats .three-column{
+    width: 80%;
+}
+.seats .four-column{
+    width: 90%;
+}
+.seats .two-column span,
+.seats .three-column span,
+.seats .four-column span{
+    background-color: #b3b3b36f;
+    margin: 5px auto;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 0;
+    border-radius: 8px;
+    height: 30px;
+    transition: ease-in-out 0.1s;
+}
+.seats .two-column span:hover,
+.seats .three-column span:hover,
+.seats .four-column span:hover{
+    border: 1px solid var(--back-color);
+}
+.seats .two-column span{
+    width: 22%;
+}
+.seats .three-column span{
+    width: 15%;
+}
+.seats .four-column span{
+    width: 10%;;
+}
+
+.seats .two-column .active,
+.seats .three-column .active,
+.seats .four-column .active{
+    background-color: var(--back-color);
+    color: white;
+    opacity: 0.3;
+    cursor: none;
+}
+.seats .two-column .select,
+.seats .three-column .select,
+.seats .four-column .select{
+    background-color: var(--back-color);
+    color: white;
+}
+
+.seats button{
+    width: 20%;
+    font-weight: bold;
+    color: white;
+    background-color: var(--back-color);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    display: block;
+    margin: 20px auto;
+}
+.seats button:focus{
+    border: 1px solid var(--back-color);
+    background-color: white;
+    color: var(--back-color);
+}

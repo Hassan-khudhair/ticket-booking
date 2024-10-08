@@ -1,23 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import travelImage from '../assest/imgs/travel-removebg-preview.png'
 import { faArrowsTurnToDots } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Header from './Header'
 function Home() {
   return (
     <>
-        <div className="head">
-          <div className="logo">
-            <a href="#"><img src={travelImage} alt="" /></a>
-          </div>
-          <div className="list-navbar">
-            <ul>
-              <li><a href="#" className='active'>الرئيسيه</a></li>
-              <li><a href="#">الرحلات</a></li>
-              <li><a href="#">من نحن</a></li>
-              <li><a href="#" className='active'>تواصل معنا</a></li>
-            </ul>
-          </div>
-        </div>
+        <Header />
         <div className="home">
           <div className="text">
             <div>
